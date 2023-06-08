@@ -10,7 +10,7 @@ if __name__ == '__main__':
                 exit(1)
                 
         elif lens == 1:
-                print(lens - 1, "arguments:")
+                print(lens - 1, "arguments.")
                 exit(1)
 
         else:
