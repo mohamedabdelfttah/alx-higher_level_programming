@@ -3,7 +3,7 @@
 
 
 class Square:
-    
+
     """
     Class that defines properties of square by: (based on 0-square.py).
     """
@@ -16,4 +16,4 @@ class Square:
         Args:
             size: The size of the square.
         """
-         self.__size = size
+        self.__size = size
