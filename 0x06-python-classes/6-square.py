@@ -6,14 +6,16 @@ class Square:
     """
      a class Square that defines a square by: (based on 5-square.py)
     """
-    def __init__(self, size=0):
+    def __init__(self, size=0, position=(0, 0)):
         """
         Initialize a Square object.
 
         Args:
             size : The size of the square.
+            __position (tuple): position of the square.
         """
         self.__size = size
+        self.position = position
 
     def area(self):
         """
