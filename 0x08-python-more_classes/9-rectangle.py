@@ -33,14 +33,10 @@ class Rectangle:
 
     def __str__(self):
         """Returns a string  filled with the '#' character."""
-        if self.__height == 0 or self.__width == 0:
+        if self.__width is 0 or self.__height is 0:
             return ""
-        rec_str = ""
-        for i in range(self.__height):
-            for j in range(self.__width):
-                rec_str += str(self.print_symbol)
-            rec_str += "\n"
-        return rec_str[:-1]
+        return ("\n".join(["".join([str(self.print_symbol)
+                for i in range(self.__width)]) for j in range(self.__height)]))
 
     def __repr__(self):
         """Return a string representation of the Rectangle
