@@ -153,6 +153,6 @@ class Rectangle:
             size: The size
 
         Returns:
-            new Rectangle instance with width == height == size
+               new Rectangle instance with width == height == size
         """
         return cls(size, size)
