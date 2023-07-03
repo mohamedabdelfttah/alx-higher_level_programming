@@ -27,16 +27,28 @@ class Rectangle:
             height: An integer to object height.
 
         """
+        if not isinstance(width, int):
+            raise TypeError("width must be an integer")
+        if width < 0:
+            raise ValueError("width must be >= 0")
+        if not isinstance(height, int):
+            raise TypeError("height must be an integer")
+        if height < 0:
+            raise ValueError("height must be >= 0")
         Rectangle.number_of_instances += 1
         self.__width = width
         self.__height = height
 
     def __str__(self):
         """Returns a string  filled with the '#' character."""
-        if self.__width is 0 or self.__height is 0:
+        if self.__height == 0 or self.__width == 0:
             return ""
-        return ("\n".join(["".join([str(self.print_symbol)
-                for i in range(self.__width)]) for j in range(self.__height)]))
+        rec_str = ""
+        for i in range(self.__height):
+            for j in range(self.__width):
+                rec_str += str(self.print_symbol)
+            rec_str += "\n"
+        return rec_str[:-1]
 
     def __repr__(self):
         """Return a string representation of the Rectangle
@@ -150,4 +162,4 @@ class Rectangle:
         Returns:
                new Rectangle instance with width == height == size
         """
-        return Rectangle(size, size)
+        return cls(size, size)
