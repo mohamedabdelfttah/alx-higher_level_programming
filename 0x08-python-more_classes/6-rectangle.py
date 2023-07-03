@@ -4,7 +4,7 @@
 
 class Rectangle:
     """
-    Class defines a rectangle by: (based on 4-rectangle.py)
+    Class defines a rectangle by: (based on 5-rectangle.py)
 
     Args:
         width: integer indicating the width.
