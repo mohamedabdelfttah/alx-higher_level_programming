@@ -3,7 +3,7 @@
 
 class Rectangle:
     """
-    Defines the blueprint of a rectangle.
+    Class defines a rectangle by: (based on 0-rectangle.py)
 
     Args:
         width: integer indicating the width.
